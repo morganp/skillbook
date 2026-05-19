@@ -1,0 +1,92 @@
+{
+  "_links": {
+    "resources": [
+      {
+        "contentType": "application/pdf",
+        "extension": "pdf",
+        "href": "https://documentation-service.arm.com/static/68da8cd1bd7cab51328c2998?token=",
+        "name": "IHI0079D_amba_cxs_streaming_protocol_spec.pdf"
+      }
+    ],
+    "revisions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0079/revisions"
+      }
+    ],
+    "self": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0079/d?lang=en&rev=0"
+      }
+    ],
+    "self-relative": [
+      {
+        "href": "/documentation/ihi0079/d?lang=en&rev=0"
+      }
+    ],
+    "versions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0079/versions"
+      }
+    ]
+  },
+  "document": "ihi0079",
+  "isConfidential": false,
+  "keywords": [
+    "AMBA"
+  ],
+  "language": "en",
+  "languageLabel": "English",
+  "metadata": {
+    "audience": [
+      "Architects",
+      "Hardware Engineers",
+      "Silicon Specialists",
+      "SoC Designers"
+    ],
+    "author": "Arm",
+    "categories": [
+      "Architecture products"
+    ],
+    "categoryClassifications": [
+      "ARCDOC"
+    ],
+    "confidentiality": "Non-Confidential",
+    "contentDescription": "This specification describes the CXS streaming interface protocol. The protocol is designed for point-to-point.",
+    "contentFormat": "PDFOnly",
+    "contentType": "Architecture Document",
+    "created": "2025-09-29T13:42:41.328+0000",
+    "productQuality": "REL",
+    "productType": "Advanced Microcontroller Bus Architecture (AMBA)",
+    "published": "2025-09-29T00:00:00.000+0000",
+    "topics": [
+      "Computer architecture"
+    ],
+    "updated": "2025-09-29T13:42:41.328+0000"
+  },
+  "products": [
+    "AMBA"
+  ],
+  "revision": "0",
+  "title": "AMBA CXS Protocol Specification",
+  "topic": {
+    "_links": {
+      "self": [
+        {
+          "href": "https://documentation-service.arm.com/documentation/ihi0079/d?lang=en&rev=0"
+        }
+      ],
+      "self-relative": [
+        {
+          "href": "/documentation/ihi0079/d?lang=en&rev=0"
+        }
+      ]
+    },
+    "anchors": [],
+    "content": "PGh0bWw+CiA8aGVhZD48L2hlYWQ+IAogPGJvZHk+IAogIDxkaXYgY2xhc3M9ImRvY3VtZW50cy10aXRsZXBhZ2UiPiAKICAgPGgyIGNsYXNzPSJkb2N1bWVudHMtdGl0bGUiPkFNQkEgQ1hTIFByb3RvY29sIFNwZWNpZmljYXRpb248L2gyPiAKICAgPHA+VGhpcyBkb2N1bWVudCBpcyBvbmx5IGF2YWlsYWJsZSBpbiBhIFBERiB2ZXJzaW9uLiBDbGljayA8c3Ryb25nPkRvd25sb2FkPC9zdHJvbmc+IHRvIHZpZXcuPC9wPiAKICA8L2Rpdj4gIAogPC9ib2R5Pgo8L2h0bWw+",
+    "label": "AMBA CXS Protocol Specification",
+    "slug": "",
+    "topics": []
+  },
+  "version": "d",
+  "versionLabel": "D"
+}

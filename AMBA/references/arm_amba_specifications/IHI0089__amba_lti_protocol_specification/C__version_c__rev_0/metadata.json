@@ -1,0 +1,90 @@
+{
+  "_links": {
+    "resources": [
+      {
+        "contentType": "application/pdf",
+        "extension": "pdf",
+        "href": "https://documentation-service.arm.com/static/668664729082ad344b14bfae?token=",
+        "name": "IHI0089C_amba_lti_protocol_spec.pdf"
+      }
+    ],
+    "revisions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0089/revisions"
+      }
+    ],
+    "self": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0089/c?lang=en&rev=0"
+      }
+    ],
+    "self-relative": [
+      {
+        "href": "/documentation/ihi0089/c?lang=en&rev=0"
+      }
+    ],
+    "versions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0089/versions"
+      }
+    ]
+  },
+  "document": "ihi0089",
+  "isConfidential": false,
+  "keywords": [
+    "AMBA"
+  ],
+  "language": "en",
+  "languageLabel": "English",
+  "metadata": {
+    "audience": [
+      "Architects",
+      "Hardware Engineers",
+      "Silicon Specialists",
+      "SoC Designers",
+      "Verification Engineers"
+    ],
+    "author": "Arm",
+    "categories": [
+      "Architecture products"
+    ],
+    "confidentiality": "Non-Confidential",
+    "contentDescription": "AMBA LTI defines the point-to-point protocol between an I/O device and the TLBU of an Arm SMMU.",
+    "contentFormat": "PDFOnly",
+    "contentType": "Architecture Document",
+    "created": "2024-07-04T08:59:30.338+0000",
+    "productQuality": "EAC",
+    "productType": "Advanced Microcontroller Bus Architecture (AMBA)",
+    "published": "2024-07-03T00:00:00.000+0000",
+    "topics": [
+      "Verification"
+    ],
+    "updated": "2024-12-16T23:00:53.122+0000"
+  },
+  "products": [
+    "AMBA 5"
+  ],
+  "revision": "0",
+  "title": "AMBA LTI Protocol Specification",
+  "topic": {
+    "_links": {
+      "self": [
+        {
+          "href": "https://documentation-service.arm.com/documentation/ihi0089/c?lang=en&rev=0"
+        }
+      ],
+      "self-relative": [
+        {
+          "href": "/documentation/ihi0089/c?lang=en&rev=0"
+        }
+      ]
+    },
+    "anchors": [],
+    "content": "PGh0bWw+CiA8aGVhZD48L2hlYWQ+IAogPGJvZHk+IAogIDxkaXYgY2xhc3M9ImRvY3VtZW50cy10aXRsZXBhZ2UiPiAKICAgPGgyIGNsYXNzPSJkb2N1bWVudHMtdGl0bGUiPkFNQkEgTFRJIFByb3RvY29sIFNwZWNpZmljYXRpb248L2gyPiAKICAgPHA+VGhpcyBkb2N1bWVudCBpcyBvbmx5IGF2YWlsYWJsZSBpbiBhIFBERiB2ZXJzaW9uLiBDbGljayA8c3Ryb25nPkRvd25sb2FkPC9zdHJvbmc+IHRvIHZpZXcuPC9wPiAKICA8L2Rpdj4gIAogPC9ib2R5Pgo8L2h0bWw+",
+    "label": "AMBA LTI Protocol Specification",
+    "slug": "",
+    "topics": []
+  },
+  "version": "c",
+  "versionLabel": "C"
+}

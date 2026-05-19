@@ -1,0 +1,85 @@
+{
+  "_links": {
+    "resources": [
+      {
+        "contentType": "application/pdf",
+        "extension": "pdf",
+        "href": "https://documentation-service.arm.com/static/6141bf0d674a052ae36ca811?token=",
+        "name": "IHI0033C_amba_ahb_protocol_spec.pdf"
+      }
+    ],
+    "revisions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0033/revisions"
+      }
+    ],
+    "self": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0033/c?lang=en&rev=c"
+      }
+    ],
+    "self-relative": [
+      {
+        "href": "/documentation/ihi0033/c?lang=en&rev=c"
+      }
+    ],
+    "versions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0033/versions"
+      }
+    ]
+  },
+  "document": "ihi0033",
+  "isConfidential": false,
+  "keywords": [
+    "AMBA"
+  ],
+  "language": "en",
+  "languageLabel": "English",
+  "metadata": {
+    "audience": [
+      "Hardware Engineers",
+      "SoC Designers",
+      "Silicon Specialists"
+    ],
+    "author": "Arm",
+    "categories": [
+      "Processor products"
+    ],
+    "confidentiality": "Non-Confidential",
+    "contentDescription": "The AMBA AHB specification defines a bus interface suitable for high-performance synthesizable designs.",
+    "contentFormat": "PDFOnly",
+    "contentType": "Architecture Document",
+    "created": "2021-09-15T09:38:21.170+0000",
+    "productQuality": "EAC",
+    "published": "2021-09-15T00:00:00.000+0000",
+    "topics": [],
+    "updated": "2024-12-16T21:58:01.317+0000"
+  },
+  "products": [
+    "AMBA"
+  ],
+  "revision": "c",
+  "title": "AMBA AHB Protocol Specification",
+  "topic": {
+    "_links": {
+      "self": [
+        {
+          "href": "https://documentation-service.arm.com/documentation/ihi0033/c?lang=en&rev=c"
+        }
+      ],
+      "self-relative": [
+        {
+          "href": "/documentation/ihi0033/c?lang=en&rev=c"
+        }
+      ]
+    },
+    "anchors": [],
+    "content": "PGh0bWw+CiA8aGVhZD48L2hlYWQ+IAogPGJvZHk+IAogIDxkaXYgY2xhc3M9ImRvY3VtZW50cy10aXRsZXBhZ2UiPiAKICAgPGgyIGNsYXNzPSJkb2N1bWVudHMtdGl0bGUiPkFNQkEgQUhCIFByb3RvY29sIFNwZWNpZmljYXRpb248L2gyPiAKICAgPHA+VGhpcyBkb2N1bWVudCBpcyBvbmx5IGF2YWlsYWJsZSBpbiBhIFBERiB2ZXJzaW9uLiBDbGljayA8c3Ryb25nPkRvd25sb2FkPC9zdHJvbmc+IHRvIHZpZXcuPC9wPiAKICA8L2Rpdj4gIAogPC9ib2R5Pgo8L2h0bWw+",
+    "label": "AMBA AHB Protocol Specification",
+    "slug": "",
+    "topics": []
+  },
+  "version": "c",
+  "versionLabel": "C"
+}

@@ -1,0 +1,85 @@
+{
+  "_links": {
+    "resources": [
+      {
+        "contentType": "application/pdf",
+        "extension": "pdf",
+        "href": "https://documentation-service.arm.com/static/5f914e1cf86e16515cdc2b3b?token=",
+        "name": "amba_5_chi_architecture_specification_IHI0050B.pdf"
+      }
+    ],
+    "revisions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0050/revisions"
+      }
+    ],
+    "self": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0050/b?lang=en&rev=0"
+      }
+    ],
+    "self-relative": [
+      {
+        "href": "/documentation/ihi0050/b?lang=en&rev=0"
+      }
+    ],
+    "versions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0050/versions"
+      }
+    ]
+  },
+  "document": "ihi0050",
+  "isConfidential": false,
+  "keywords": [
+    "CHI"
+  ],
+  "language": "en",
+  "languageLabel": "English",
+  "metadata": {
+    "audience": [
+      "siliconSpecialists",
+      "hardwareEngineers",
+      "socDesigners"
+    ],
+    "author": "Arm",
+    "categories": [
+      "Architecture products"
+    ],
+    "confidentiality": "Non-Confidential",
+    "contentDescription": "This specification describes the AMBA 5 Coherent Hub Interface (CHI) architecture.",
+    "contentFormat": "PDFOnly",
+    "contentType": "archDoc",
+    "created": "2020-10-22T09:17:16.736+0000",
+    "productQuality": "REL",
+    "published": "2017-08-30T01:01:01.000+0000",
+    "topics": [],
+    "updated": "2024-12-16T22:05:10.067+0000"
+  },
+  "products": [
+    "CHI"
+  ],
+  "revision": "0",
+  "title": "AMBA 5 CHI Architecture Specification",
+  "topic": {
+    "_links": {
+      "self": [
+        {
+          "href": "https://documentation-service.arm.com/documentation/ihi0050/b?lang=en&rev=0"
+        }
+      ],
+      "self-relative": [
+        {
+          "href": "/documentation/ihi0050/b?lang=en&rev=0"
+        }
+      ]
+    },
+    "anchors": [],
+    "content": "PGh0bWw+CiA8aGVhZD48L2hlYWQ+IAogPGJvZHk+IAogIDxkaXYgY2xhc3M9ImRvY3VtZW50cy10aXRsZXBhZ2UiPiAKICAgPGgyIGNsYXNzPSJkb2N1bWVudHMtdGl0bGUiPkFSTSBBTUJBIDUgQ0hJIEFyY2hpdGVjdHVyZSBTcGVjaWZpY2F0aW9uPC9oMj4gCiAgIDxoMj5BTUJBIDUgQ0hJIEFyY2hpdGVjdHVyZSBTcGVjaWZpY2F0aW9uPC9oMj4gCiAgIDxwPlRoaXMgZG9jdW1lbnQgaXMgb25seSBhdmFpbGFibGUgaW4gYSBQREYgdmVyc2lvbi4gQ2xpY2sgPHN0cm9uZz5Eb3dubG9hZDwvc3Ryb25nPiB0byB2aWV3LjwvcD4gCiAgPC9kaXY+ICAKIDwvYm9keT4KPC9odG1sPg==",
+    "label": "ARM AMBA 5 CHI Architecture Specification AMBA 5 CHI Architecture Specification",
+    "slug": "",
+    "topics": []
+  },
+  "version": "b",
+  "versionLabel": "B"
+}

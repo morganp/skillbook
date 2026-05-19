@@ -1,0 +1,88 @@
+{
+  "_links": {
+    "resources": [
+      {
+        "contentType": "application/pdf",
+        "extension": "pdf",
+        "href": "https://documentation-service.arm.com/static/6294e5a131ea212bb662277e?token=",
+        "name": "IHI0083A_b_amba_generic_flash_bus_protocol_specification.pdf"
+      }
+    ],
+    "revisions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0083/revisions"
+      }
+    ],
+    "self": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0083/ab?lang=en&rev=0"
+      }
+    ],
+    "self-relative": [
+      {
+        "href": "/documentation/ihi0083/ab?lang=en&rev=0"
+      }
+    ],
+    "versions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0083/versions"
+      }
+    ]
+  },
+  "document": "ihi0083",
+  "isConfidential": false,
+  "keywords": [
+    "AMBA"
+  ],
+  "language": "en",
+  "languageLabel": "English",
+  "metadata": {
+    "audience": [
+      "Hardware Engineers",
+      "SoC Designers",
+      "Silicon Specialists"
+    ],
+    "author": "Arm",
+    "categories": [
+      "Architecture products"
+    ],
+    "confidentiality": "Non-Confidential",
+    "contentDescription": "The purpose of this document is to provide an overview of the AMBA Generic Flash Bus (GFB) Protocol Specification. It describes the signals, parameters, and rules required by the protocol. Also, it contains example waveforms to show the operation of the bus.",
+    "contentFormat": "PDFOnly",
+    "contentType": "Architecture Document",
+    "created": "2022-05-30T15:41:21.525+0000",
+    "productQuality": "EAC",
+    "productType": "Advanced Microcontroller Bus Architecture (AMBA)",
+    "published": "2022-05-30T00:00:00.000+0000",
+    "topics": [
+      "Computer architecture"
+    ],
+    "updated": "2024-12-16T22:54:23.443+0000"
+  },
+  "products": [
+    "AMBA"
+  ],
+  "revision": "0",
+  "title": "AMBA Generic Flash Bus Protocol Specification",
+  "topic": {
+    "_links": {
+      "self": [
+        {
+          "href": "https://documentation-service.arm.com/documentation/ihi0083/ab?lang=en&rev=0"
+        }
+      ],
+      "self-relative": [
+        {
+          "href": "/documentation/ihi0083/ab?lang=en&rev=0"
+        }
+      ]
+    },
+    "anchors": [],
+    "content": "PGh0bWw+CiA8aGVhZD48L2hlYWQ+IAogPGJvZHk+IAogIDxkaXYgY2xhc3M9ImRvY3VtZW50cy10aXRsZXBhZ2UiPiAKICAgPGgyIGNsYXNzPSJkb2N1bWVudHMtdGl0bGUiPkFNQkEgR2VuZXJpYyBGbGFzaCBCdXMgUHJvdG9jb2wgU3BlY2lmaWNhdGlvbjwvaDI+IAogICA8cD5UaGlzIGRvY3VtZW50IGlzIG9ubHkgYXZhaWxhYmxlIGluIGEgUERGIHZlcnNpb24uIENsaWNrIDxzdHJvbmc+RG93bmxvYWQ8L3N0cm9uZz4gdG8gdmlldy48L3A+IAogIDwvZGl2PiAgCiA8L2JvZHk+CjwvaHRtbD4=",
+    "label": "AMBA Generic Flash Bus Protocol Specification",
+    "slug": "",
+    "topics": []
+  },
+  "version": "ab",
+  "versionLabel": "A.b"
+}

@@ -1,0 +1,85 @@
+{
+  "_links": {
+    "resources": [
+      {
+        "contentType": "application/pdf",
+        "extension": "pdf",
+        "href": "https://documentation-service.arm.com/static/5f914f6ef86e16515cdc2b62?token=",
+        "name": "IHI0082A_amba_adaptive_traffic_profiles_specification.pdf"
+      }
+    ],
+    "revisions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0082/revisions"
+      }
+    ],
+    "self": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0082/a?lang=en&rev=0"
+      }
+    ],
+    "self-relative": [
+      {
+        "href": "/documentation/ihi0082/a?lang=en&rev=0"
+      }
+    ],
+    "versions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0082/versions"
+      }
+    ]
+  },
+  "document": "ihi0082",
+  "isConfidential": false,
+  "keywords": [
+    "AMBA"
+  ],
+  "language": "en",
+  "languageLabel": "English",
+  "metadata": {
+    "audience": [
+      "siliconSpecialists",
+      "hardwareEngineers",
+      "socDesigners"
+    ],
+    "author": "Arm",
+    "categories": [
+      "Architecture products"
+    ],
+    "confidentiality": "Non-Confidential",
+    "contentDescription": "This specification is written for hardware and software engineers who want to design or debug systems and modules that are compatible with AMBA Adaptive Traffic Profiles.",
+    "contentFormat": "PDFOnly",
+    "contentType": "archDoc",
+    "created": "2020-10-22T09:22:54.571+0000",
+    "productQuality": "REL",
+    "published": "2019-03-27T01:01:01.000+0000",
+    "topics": [],
+    "updated": "2024-12-16T22:53:00.709+0000"
+  },
+  "products": [
+    "AMBA"
+  ],
+  "revision": "0",
+  "title": "AMBA Adaptive Traffic Profiles Specification",
+  "topic": {
+    "_links": {
+      "self": [
+        {
+          "href": "https://documentation-service.arm.com/documentation/ihi0082/a?lang=en&rev=0"
+        }
+      ],
+      "self-relative": [
+        {
+          "href": "/documentation/ihi0082/a?lang=en&rev=0"
+        }
+      ]
+    },
+    "anchors": [],
+    "content": "PGh0bWw+CiA8aGVhZD48L2hlYWQ+IAogPGJvZHk+IAogIDxkaXYgY2xhc3M9ImRvY3VtZW50cy10aXRsZXBhZ2UiPiAKICAgPGgyIGNsYXNzPSJkb2N1bWVudHMtdGl0bGUiPkFNQkEgQWRhcHRpdmUgVHJhZmZpYyBQcm9maWxlcyBTcGVjaWZpY2F0aW9uPC9oMj4gCiAgIDxoMj5TcGVjaWZpY2F0aW9uPC9oMj4gCiAgIDxwPlRoaXMgZG9jdW1lbnQgaXMgb25seSBhdmFpbGFibGUgaW4gYSBQREYgdmVyc2lvbi4gQ2xpY2sgPHN0cm9uZz5Eb3dubG9hZDwvc3Ryb25nPiB0byB2aWV3LjwvcD4gCiAgPC9kaXY+ICAKIDwvYm9keT4KPC9odG1sPg==",
+    "label": "AMBA Adaptive Traffic Profiles Specification Specification",
+    "slug": "",
+    "topics": []
+  },
+  "version": "a",
+  "versionLabel": "A"
+}

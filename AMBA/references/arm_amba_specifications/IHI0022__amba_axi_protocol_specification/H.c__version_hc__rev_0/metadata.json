@@ -1,0 +1,85 @@
+{
+  "_links": {
+    "resources": [
+      {
+        "contentType": "application/pdf",
+        "extension": "pdf",
+        "href": "https://documentation-service.arm.com/static/602a9df190ee6824a1e02b98?token=",
+        "name": "IHI0022H_c_amba_axi_protocol_spec.pdf"
+      }
+    ],
+    "revisions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0022/revisions"
+      }
+    ],
+    "self": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0022/hc?lang=en&rev=0"
+      }
+    ],
+    "self-relative": [
+      {
+        "href": "/documentation/ihi0022/hc?lang=en&rev=0"
+      }
+    ],
+    "versions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0022/versions"
+      }
+    ]
+  },
+  "document": "ihi0022",
+  "isConfidential": false,
+  "keywords": [
+    "AXI"
+  ],
+  "language": "en",
+  "languageLabel": "English",
+  "metadata": {
+    "audience": [
+      "siliconSpecialists",
+      "hardwareEngineers",
+      "socDesigners"
+    ],
+    "author": "Arm",
+    "categories": [
+      "Architecture products"
+    ],
+    "confidentiality": "Non-Confidential",
+    "contentDescription": "This specification describes the AMBA protocols for AXI and ACE. Several release levels and variants are described: AXI3, AXI4, AXI4-Lite, AXI5, AXI5-Lite, ACE, ACE-Lite, ACE5, ACE5-Lite, ACE5-LiteDVM, and ACE5-LiteACP.",
+    "contentFormat": "PDFOnly",
+    "contentType": "archDoc",
+    "created": "2021-02-15T16:14:40.765+0000",
+    "productQuality": "REL",
+    "published": "2021-01-26T00:01:00.000+0000",
+    "topics": [],
+    "updated": "2024-12-16T21:48:03.491+0000"
+  },
+  "products": [
+    "AXI"
+  ],
+  "revision": "0",
+  "title": "AMBA AXI and ACE Protocol Specification Version H.c",
+  "topic": {
+    "_links": {
+      "self": [
+        {
+          "href": "https://documentation-service.arm.com/documentation/ihi0022/hc?lang=en&rev=0"
+        }
+      ],
+      "self-relative": [
+        {
+          "href": "/documentation/ihi0022/hc?lang=en&rev=0"
+        }
+      ]
+    },
+    "anchors": [],
+    "content": "PGh0bWw+CiA8aGVhZD48L2hlYWQ+IAogPGJvZHk+IAogIDxkaXYgY2xhc3M9ImRvY3VtZW50cy10aXRsZXBhZ2UiPiAKICAgPGgyIGNsYXNzPSJkb2N1bWVudHMtdGl0bGUiPkFNQkEgQVhJIGFuZCBBQ0UgUHJvdG9jb2wgU3BlY2lmaWNhdGlvbjwvaDI+IAogICA8cD5UaGlzIGRvY3VtZW50IGlzIG9ubHkgYXZhaWxhYmxlIGluIGEgUERGIHZlcnNpb24uIENsaWNrIDxzdHJvbmc+RG93bmxvYWQ8L3N0cm9uZz4gdG8gdmlldy48L3A+IAogIDwvZGl2PiAgCiA8L2JvZHk+CjwvaHRtbD4=",
+    "label": "AMBA AXI and ACE Protocol Specification",
+    "slug": "",
+    "topics": []
+  },
+  "version": "hc",
+  "versionLabel": "H.c"
+}

@@ -1,0 +1,92 @@
+{
+  "_links": {
+    "resources": [
+      {
+        "contentType": "application/pdf",
+        "extension": "pdf",
+        "href": "https://documentation-service.arm.com/static/68b03beb01ae952d9559f9eb?token=",
+        "name": "IHI0022L_amba_axi_protocol_spec.pdf"
+      }
+    ],
+    "revisions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0022/revisions"
+      }
+    ],
+    "self": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0022/l?lang=en&rev=0"
+      }
+    ],
+    "self-relative": [
+      {
+        "href": "/documentation/ihi0022/l?lang=en&rev=0"
+      }
+    ],
+    "versions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0022/versions"
+      }
+    ]
+  },
+  "document": "ihi0022",
+  "isConfidential": false,
+  "keywords": [
+    "AMBA"
+  ],
+  "language": "en",
+  "languageLabel": "English",
+  "metadata": {
+    "audience": [
+      "Architects",
+      "Hardware Engineers",
+      "Silicon Specialists",
+      "SoC Designers"
+    ],
+    "author": "Arm",
+    "categories": [
+      "Architecture products"
+    ],
+    "categoryClassifications": [
+      "ARCDOC"
+    ],
+    "confidentiality": "Non-Confidential",
+    "contentDescription": "The AXI protocol supports high-performance, high-frequency system designs for communication between Manager and Subordinate components.",
+    "contentFormat": "PDFOnly",
+    "contentType": "Architecture Document",
+    "created": "2025-08-28T11:22:19.843+0000",
+    "productQuality": "EAC",
+    "productType": "Advanced Microcontroller Bus Architecture (AMBA)",
+    "published": "2025-08-28T00:00:00.000+0000",
+    "topics": [
+      "Computer architecture"
+    ],
+    "updated": "2025-08-28T11:22:19.843+0000"
+  },
+  "products": [
+    "AMBA"
+  ],
+  "revision": "0",
+  "title": "AMBA AXI Protocol Specification",
+  "topic": {
+    "_links": {
+      "self": [
+        {
+          "href": "https://documentation-service.arm.com/documentation/ihi0022/l?lang=en&rev=0"
+        }
+      ],
+      "self-relative": [
+        {
+          "href": "/documentation/ihi0022/l?lang=en&rev=0"
+        }
+      ]
+    },
+    "anchors": [],
+    "content": "PGh0bWw+CiA8aGVhZD48L2hlYWQ+IAogPGJvZHk+IAogIDxkaXYgY2xhc3M9ImRvY3VtZW50cy10aXRsZXBhZ2UiPiAKICAgPGgyIGNsYXNzPSJkb2N1bWVudHMtdGl0bGUiPkFNQkEgQVhJIFByb3RvY29sIFNwZWNpZmljYXRpb248L2gyPiAKICAgPHA+VGhpcyBkb2N1bWVudCBpcyBvbmx5IGF2YWlsYWJsZSBpbiBhIFBERiB2ZXJzaW9uLiBDbGljayA8c3Ryb25nPkRvd25sb2FkPC9zdHJvbmc+IHRvIHZpZXcuPC9wPiAKICA8L2Rpdj4gIAogPC9ib2R5Pgo8L2h0bWw+",
+    "label": "AMBA AXI Protocol Specification",
+    "slug": "",
+    "topics": []
+  },
+  "version": "l",
+  "versionLabel": "L"
+}

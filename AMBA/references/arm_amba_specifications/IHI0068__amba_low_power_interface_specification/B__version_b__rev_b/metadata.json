@@ -1,0 +1,85 @@
+{
+  "_links": {
+    "resources": [
+      {
+        "contentType": "application/pdf",
+        "extension": "pdf",
+        "href": "https://documentation-service.arm.com/static/5f915e4ef86e16515cdc3b37?token=",
+        "name": "IHI0068B_low_power_interface_spec.pdf"
+      }
+    ],
+    "revisions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0068/revisions"
+      }
+    ],
+    "self": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0068/b?lang=en&rev=b"
+      }
+    ],
+    "self-relative": [
+      {
+        "href": "/documentation/ihi0068/b?lang=en&rev=b"
+      }
+    ],
+    "versions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0068/versions"
+      }
+    ]
+  },
+  "document": "ihi0068",
+  "isConfidential": false,
+  "keywords": [
+    "AMBA"
+  ],
+  "language": "en",
+  "languageLabel": "English",
+  "metadata": {
+    "audience": [
+      "siliconSpecialists",
+      "hardwareEngineers",
+      "socDesigners"
+    ],
+    "author": "Arm",
+    "categories": [
+      "Architecture products"
+    ],
+    "confidentiality": "Non-Confidential",
+    "contentDescription": "This document describes interfaces that can be used to control the clock and power states of devices",
+    "contentFormat": "PDFOnly",
+    "contentType": "archDoc",
+    "created": "2020-10-22T10:26:21.967+0000",
+    "productQuality": "REL",
+    "published": "2014-02-12T01:01:01.000+0000",
+    "topics": [],
+    "updated": "2024-12-16T22:25:42.244+0000"
+  },
+  "products": [
+    "AMBA"
+  ],
+  "revision": "b",
+  "title": "Low Power Interface Specification",
+  "topic": {
+    "_links": {
+      "self": [
+        {
+          "href": "https://documentation-service.arm.com/documentation/ihi0068/b?lang=en&rev=b"
+        }
+      ],
+      "self-relative": [
+        {
+          "href": "/documentation/ihi0068/b?lang=en&rev=b"
+        }
+      ]
+    },
+    "anchors": [],
+    "content": "PGh0bWw+CiA8aGVhZD48L2hlYWQ+IAogPGJvZHk+IAogIDxkaXYgY2xhc3M9ImRvY3VtZW50cy10aXRsZXBhZ2UiPiAKICAgPGgyIGNsYXNzPSJkb2N1bWVudHMtdGl0bGUiPkxvdyBQb3dlciBJbnRlcmZhY2UgU3BlY2lmaWNhdGlvbjwvaDI+IAogICA8aDI+UHJvdG9jb2wgU3BlY2lmaWNhdGlvbjwvaDI+IAogICA8cD5UaGlzIGRvY3VtZW50IGlzIG9ubHkgYXZhaWxhYmxlIGluIGEgUERGIHZlcnNpb24uIENsaWNrIDxzdHJvbmc+RG93bmxvYWQ8L3N0cm9uZz4gdG8gdmlldy48L3A+IAogIDwvZGl2PiAgCiA8L2JvZHk+CjwvaHRtbD4=",
+    "label": "Low Power Interface Specification Protocol Specification",
+    "slug": "",
+    "topics": []
+  },
+  "version": "b",
+  "versionLabel": "B"
+}

@@ -1,0 +1,89 @@
+{
+  "_links": {
+    "resources": [
+      {
+        "contentType": "application/pdf",
+        "extension": "pdf",
+        "href": "https://documentation-service.arm.com/static/65a69276b52744113be6343b?token=",
+        "name": "IHI0050F_amba_chi_architecture_spec.pdf"
+      }
+    ],
+    "revisions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0050/revisions"
+      }
+    ],
+    "self": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0050/f?lang=en&rev=0"
+      }
+    ],
+    "self-relative": [
+      {
+        "href": "/documentation/ihi0050/f?lang=en&rev=0"
+      }
+    ],
+    "versions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0050/versions"
+      }
+    ]
+  },
+  "document": "ihi0050",
+  "isConfidential": false,
+  "keywords": [
+    "CHI"
+  ],
+  "language": "en",
+  "languageLabel": "English",
+  "metadata": {
+    "audience": [
+      "Architects",
+      "Hardware Engineers",
+      "Silicon Specialists",
+      "SoC Designers"
+    ],
+    "author": "Arm",
+    "categories": [
+      "Architecture products"
+    ],
+    "confidentiality": "Non-Confidential",
+    "contentDescription": "This specification describes the AMBA 5 CHI architecture.",
+    "contentFormat": "PDFOnly",
+    "contentType": "Architecture Document",
+    "created": "2024-01-16T14:28:06.560+0000",
+    "productQuality": "REL",
+    "productType": "Advanced Microcontroller Bus Architecture (AMBA)",
+    "published": "2024-01-16T00:00:00.000+0000",
+    "topics": [
+      "Computer architecture"
+    ],
+    "updated": "2024-12-16T22:08:50.662+0000"
+  },
+  "products": [
+    "CHI"
+  ],
+  "revision": "0",
+  "title": "AMBA 5 CHI Architecture Specification",
+  "topic": {
+    "_links": {
+      "self": [
+        {
+          "href": "https://documentation-service.arm.com/documentation/ihi0050/f?lang=en&rev=0"
+        }
+      ],
+      "self-relative": [
+        {
+          "href": "/documentation/ihi0050/f?lang=en&rev=0"
+        }
+      ]
+    },
+    "anchors": [],
+    "content": "PGh0bWw+CiA8aGVhZD48L2hlYWQ+IAogPGJvZHk+IAogIDxkaXYgY2xhc3M9ImRvY3VtZW50cy10aXRsZXBhZ2UiPiAKICAgPGgyIGNsYXNzPSJkb2N1bWVudHMtdGl0bGUiPkFNQkEgNSBDSEkgQXJjaGl0ZWN0dXJlIFNwZWNpZmljYXRpb248L2gyPiAKICAgPHA+VGhpcyBkb2N1bWVudCBpcyBvbmx5IGF2YWlsYWJsZSBpbiBhIFBERiB2ZXJzaW9uLiBDbGljayA8c3Ryb25nPkRvd25sb2FkPC9zdHJvbmc+IHRvIHZpZXcuPC9wPiAKICAgPHA+Rm9yIGEgbGlzdCBvZiB0aGUga25vd24gaXNzdWVzIGluIHRoZSBsYXRlc3QgdmVyc2lvbiBvZiB0aGUgQXJtIEFNQkEgQ0hJIHNwZWNpZmljYXRpb24sIHNlZSA8YSBocmVmPSJodHRwczovL2RldmVsb3Blci5hcm0uY29tL2RvY3VtZW50YXRpb24vYWVzMDA3Ny9sYXRlc3QiPjxzdHJvbmc+QU1CQSBDSEkgSXNzdWUgRiBFcnJhdGE8L3N0cm9uZz4uPC9hPjwvcD4gCiAgPC9kaXY+ICAKIDwvYm9keT4KPC9odG1sPg==",
+    "label": "AMBA 5 CHI Architecture Specification",
+    "slug": "",
+    "topics": []
+  },
+  "version": "f",
+  "versionLabel": "F"
+}

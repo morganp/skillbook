@@ -1,0 +1,85 @@
+{
+  "_links": {
+    "resources": [
+      {
+        "contentType": "application/pdf",
+        "extension": "pdf",
+        "href": "https://documentation-service.arm.com/static/642569a2314e245d086bc87e?token=",
+        "name": "IHI0011a.pdf"
+      }
+    ],
+    "revisions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0011/revisions"
+      }
+    ],
+    "self": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0011/a?lang=en&rev=1"
+      }
+    ],
+    "self-relative": [
+      {
+        "href": "/documentation/ihi0011/a?lang=en&rev=1"
+      }
+    ],
+    "versions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0011/versions"
+      }
+    ]
+  },
+  "document": "ihi0011",
+  "isConfidential": false,
+  "keywords": [
+    "AMBA"
+  ],
+  "language": "en",
+  "languageLabel": "English",
+  "metadata": {
+    "audience": [
+      "socDesigners",
+      "siliconSpecialists",
+      "hardwareEngineers"
+    ],
+    "author": "Arm",
+    "categories": [
+      "Architecture products"
+    ],
+    "confidentiality": "Non-Confidential",
+    "contentDescription": "This document is the Advanced Microcontroller Bus Architecture (AMBA) specification. The specification has been written to help experienced hardware and software engineers design modules that conform to the AMBA protocol.",
+    "contentFormat": "PDFOnly",
+    "contentType": "archDoc",
+    "created": "2023-03-30T10:51:13.941+0000",
+    "productQuality": "REL",
+    "published": "2007-03-07T15:24:25.000+0000",
+    "topics": [],
+    "updated": "2024-12-16T21:40:33.607+0000"
+  },
+  "products": [
+    "AMBA"
+  ],
+  "revision": "1",
+  "title": "AMBA Specification (Rev 2.0)",
+  "topic": {
+    "_links": {
+      "self": [
+        {
+          "href": "https://documentation-service.arm.com/documentation/ihi0011/a?lang=en&rev=1"
+        }
+      ],
+      "self-relative": [
+        {
+          "href": "/documentation/ihi0011/a?lang=en&rev=1"
+        }
+      ]
+    },
+    "anchors": [],
+    "content": "PGh0bWw+CiA8aGVhZD48L2hlYWQ+IAogPGJvZHk+IAogIDxkaXYgY2xhc3M9ImRvY3VtZW50cy10aXRsZXBhZ2UiPiAKICAgPGgyIGNsYXNzPSJkb2N1bWVudHMtdGl0bGUiPkFNQkEgU3BlY2lmaWNhdGlvbjwvaDI+IAogICA8cD5UaGlzIGRvY3VtZW50IGlzIG9ubHkgYXZhaWxhYmxlIGluIGEgUERGIHZlcnNpb24uIENsaWNrIDxzdHJvbmc+RG93bmxvYWQ8L3N0cm9uZz4gdG8gdmlldy48L3A+IAogIDwvZGl2PiAgCiA8L2JvZHk+CjwvaHRtbD4=",
+    "label": "AMBA Specification",
+    "slug": "",
+    "topics": []
+  },
+  "version": "a",
+  "versionLabel": "2.0 (A)"
+}

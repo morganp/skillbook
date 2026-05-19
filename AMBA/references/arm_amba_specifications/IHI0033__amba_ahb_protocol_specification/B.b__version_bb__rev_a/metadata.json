@@ -1,0 +1,85 @@
+{
+  "_links": {
+    "resources": [
+      {
+        "contentType": "application/pdf",
+        "extension": "pdf",
+        "href": "https://documentation-service.arm.com/static/5f91607cf86e16515cdc3b4b?token=",
+        "name": "IHI0033B_B_amba_5_ahb_protocol_spec.pdf"
+      }
+    ],
+    "revisions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0033/revisions"
+      }
+    ],
+    "self": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0033/bb?lang=en&rev=a"
+      }
+    ],
+    "self-relative": [
+      {
+        "href": "/documentation/ihi0033/bb?lang=en&rev=a"
+      }
+    ],
+    "versions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0033/versions"
+      }
+    ]
+  },
+  "document": "ihi0033",
+  "isConfidential": false,
+  "keywords": [
+    "AMBA"
+  ],
+  "language": "en",
+  "languageLabel": "English",
+  "metadata": {
+    "audience": [
+      "SoC Designers",
+      "Silicon Specialists",
+      "Hardware Engineers"
+    ],
+    "author": "Arm",
+    "categories": [
+      "Processor products"
+    ],
+    "confidentiality": "Non-Confidential",
+    "contentDescription": "The AMBA AHB specification defines a bus interface suitable for high-performance synthesizable designs.",
+    "contentFormat": "PDFOnly",
+    "contentType": "Architecture Document",
+    "created": "2020-10-22T10:35:40.200+0000",
+    "productQuality": "REL",
+    "published": "2006-09-14T15:47:31.000+0000",
+    "topics": [],
+    "updated": "2024-12-16T21:58:30.735+0000"
+  },
+  "products": [
+    "AMBA"
+  ],
+  "revision": "a",
+  "title": "Arm AMBA 5 AHB Protocol Specification",
+  "topic": {
+    "_links": {
+      "self": [
+        {
+          "href": "https://documentation-service.arm.com/documentation/ihi0033/bb?lang=en&rev=a"
+        }
+      ],
+      "self-relative": [
+        {
+          "href": "/documentation/ihi0033/bb?lang=en&rev=a"
+        }
+      ]
+    },
+    "anchors": [],
+    "content": "PGh0bWw+CiA8aGVhZD48L2hlYWQ+IAogPGJvZHk+IAogIDxkaXYgY2xhc3M9ImRvY3VtZW50cy10aXRsZXBhZ2UiPiAKICAgPGgyIGNsYXNzPSJkb2N1bWVudHMtdGl0bGUiPkFybSBBTUJBIDUgQUhCIFByb3RvY29sIFNwZWNpZmljYXRpb248L2gyPiAKICAgPGgyPkFIQjUsIEFIQi1MaXRlPC9oMj4gCiAgIDxwPlRoaXMgZG9jdW1lbnQgaXMgb25seSBhdmFpbGFibGUgaW4gYSBQREYgdmVyc2lvbi4gQ2xpY2sgPHN0cm9uZz5Eb3dubG9hZDwvc3Ryb25nPiB0byB2aWV3LjwvcD4gCiAgPC9kaXY+ICAKIDwvYm9keT4KPC9odG1sPg==",
+    "label": "Arm AMBA 5 AHB Protocol Specification AHB5, AHB-Lite",
+    "slug": "",
+    "topics": []
+  },
+  "version": "bb",
+  "versionLabel": "B.b"
+}

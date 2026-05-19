@@ -1,0 +1,85 @@
+{
+  "_links": {
+    "resources": [
+      {
+        "contentType": "application/pdf",
+        "extension": "pdf",
+        "href": "https://documentation-service.arm.com/static/6425805779edab6d64fb6f72?token=",
+        "name": "IHI0032a.pdf"
+      }
+    ],
+    "revisions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0032/revisions"
+      }
+    ],
+    "self": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0032/a?lang=en&rev=b"
+      }
+    ],
+    "self-relative": [
+      {
+        "href": "/documentation/ihi0032/a?lang=en&rev=b"
+      }
+    ],
+    "versions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0032/versions"
+      }
+    ]
+  },
+  "document": "ihi0032",
+  "isConfidential": false,
+  "keywords": [
+    "AMBA"
+  ],
+  "language": "en",
+  "languageLabel": "English",
+  "metadata": {
+    "audience": [
+      "SoC Designers",
+      "Silicon Specialists",
+      "Hardware Engineers"
+    ],
+    "author": "Arm",
+    "categories": [
+      "Architecture products"
+    ],
+    "confidentiality": "Non-Confidential",
+    "contentDescription": "The ATB protocol specification defines how trace information transfers between components in a trace system. ",
+    "contentFormat": "PDFOnly",
+    "contentType": "Architecture Document",
+    "created": "2023-03-30T12:28:07.636+0000",
+    "productQuality": "REL",
+    "published": "2006-12-05T00:00:00.000+0000",
+    "topics": [],
+    "updated": "2024-12-16T21:55:51.248+0000"
+  },
+  "products": [
+    "AMBA"
+  ],
+  "revision": "b",
+  "title": "AMBA 3 ATB Protocol Specification",
+  "topic": {
+    "_links": {
+      "self": [
+        {
+          "href": "https://documentation-service.arm.com/documentation/ihi0032/a?lang=en&rev=b"
+        }
+      ],
+      "self-relative": [
+        {
+          "href": "/documentation/ihi0032/a?lang=en&rev=b"
+        }
+      ]
+    },
+    "anchors": [],
+    "content": "PGh0bWw+CiA8aGVhZD48L2hlYWQ+IAogPGJvZHk+IAogIDxkaXYgY2xhc3M9ImRvY3VtZW50cy10aXRsZXBhZ2UiPiAKICAgPGgyIGNsYXNzPSJkb2N1bWVudHMtdGl0bGUiPkFNQkEgMyBBVEIgUHJvdG9jb2wgU3BlY2lmaWNhdGlvbjwvaDI+IAogICA8cD5UaGlzIGRvY3VtZW50IGlzIG9ubHkgYXZhaWxhYmxlIGluIGEgUERGIHZlcnNpb24uIENsaWNrIDxzdHJvbmc+RG93bmxvYWQ8L3N0cm9uZz4gdG8gdmlldy48L3A+IAogIDwvZGl2PiAgCiA8L2JvZHk+CjwvaHRtbD4=",
+    "label": "AMBA 3 ATB Protocol Specification",
+    "slug": "",
+    "topics": []
+  },
+  "version": "a",
+  "versionLabel": "A"
+}

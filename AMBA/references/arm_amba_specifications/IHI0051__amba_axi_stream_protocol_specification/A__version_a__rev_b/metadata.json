@@ -1,0 +1,85 @@
+{
+  "_links": {
+    "resources": [
+      {
+        "contentType": "application/pdf",
+        "extension": "pdf",
+        "href": "https://documentation-service.arm.com/static/642583d7314e245d086bc8c9?token=",
+        "name": "IHI0051A_amba4_axi4_stream_v1_0_protocol_spec.pdf"
+      }
+    ],
+    "revisions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0051/revisions"
+      }
+    ],
+    "self": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0051/a?lang=en&rev=b"
+      }
+    ],
+    "self-relative": [
+      {
+        "href": "/documentation/ihi0051/a?lang=en&rev=b"
+      }
+    ],
+    "versions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0051/versions"
+      }
+    ]
+  },
+  "document": "ihi0051",
+  "isConfidential": false,
+  "keywords": [
+    "AXI"
+  ],
+  "language": "en",
+  "languageLabel": "English",
+  "metadata": {
+    "audience": [
+      "socDesigners",
+      "siliconSpecialists",
+      "hardwareEngineers"
+    ],
+    "author": "Arm",
+    "categories": [
+      "Architecture products"
+    ],
+    "confidentiality": "Non-Confidential",
+    "contentDescription": "This specification defines the AMBA AXI-Stream protocols: AXI4-Stream and AXI5-Stream.",
+    "contentFormat": "PDFOnly",
+    "contentType": "archDoc",
+    "created": "2023-03-30T12:43:03.585+0000",
+    "productQuality": "REL",
+    "published": "2010-03-06T22:40:59.000+0000",
+    "topics": [],
+    "updated": "2024-12-16T22:10:32.965+0000"
+  },
+  "products": [
+    "AXI"
+  ],
+  "revision": "b",
+  "title": "AMBA 4 AXI4-Stream Protocol Specification",
+  "topic": {
+    "_links": {
+      "self": [
+        {
+          "href": "https://documentation-service.arm.com/documentation/ihi0051/a?lang=en&rev=b"
+        }
+      ],
+      "self-relative": [
+        {
+          "href": "/documentation/ihi0051/a?lang=en&rev=b"
+        }
+      ]
+    },
+    "anchors": [],
+    "content": "PGh0bWw+CiA8aGVhZD48L2hlYWQ+IAogPGJvZHk+IAogIDxkaXYgY2xhc3M9ImRvY3VtZW50cy10aXRsZXBhZ2UiPiAKICAgPGgyIGNsYXNzPSJkb2N1bWVudHMtdGl0bGUiPkFNQkEgNCBBWEk0LVN0cmVhbSBQcm90b2NvbCBTcGVjaWZpY2F0aW9uPC9oMj4gCiAgIDxwPlRoaXMgZG9jdW1lbnQgaXMgb25seSBhdmFpbGFibGUgaW4gYSBQREYgdmVyc2lvbi4gQ2xpY2sgPHN0cm9uZz5Eb3dubG9hZDwvc3Ryb25nPiB0byB2aWV3LjwvcD4gCiAgPC9kaXY+ICAKIDwvYm9keT4KPC9odG1sPg==",
+    "label": "AMBA 4 AXI4-Stream Protocol Specification",
+    "slug": "",
+    "topics": []
+  },
+  "version": "a",
+  "versionLabel": "A"
+}

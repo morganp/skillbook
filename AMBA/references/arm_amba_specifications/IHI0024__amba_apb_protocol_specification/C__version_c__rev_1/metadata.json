@@ -1,0 +1,85 @@
+{
+  "_links": {
+    "resources": [
+      {
+        "contentType": "application/pdf",
+        "extension": "pdf",
+        "href": "https://documentation-service.arm.com/static/64257f64314e245d086bc8b7?token=",
+        "name": "IHI0024C_amba_apb_protocol_v2_0_spec.pdf"
+      }
+    ],
+    "revisions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0024/revisions"
+      }
+    ],
+    "self": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0024/c?lang=en&rev=1"
+      }
+    ],
+    "self-relative": [
+      {
+        "href": "/documentation/ihi0024/c?lang=en&rev=1"
+      }
+    ],
+    "versions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0024/versions"
+      }
+    ]
+  },
+  "document": "ihi0024",
+  "isConfidential": false,
+  "keywords": [
+    "AMBA"
+  ],
+  "language": "en",
+  "languageLabel": "English",
+  "metadata": {
+    "audience": [
+      "socDesigners",
+      "siliconSpecialists",
+      "hardwareEngineers"
+    ],
+    "author": "Arm",
+    "categories": [
+      "Architecture products"
+    ],
+    "confidentiality": "Non-Confidential",
+    "contentDescription": "This specification is for the Advanced Microcontroller Bus Architecture (AMBA) Advanced Peripheral Bus (APB) Protocol Specification.",
+    "contentFormat": "PDFOnly",
+    "contentType": "archDoc",
+    "created": "2023-03-30T12:24:04.343+0000",
+    "productQuality": "REL",
+    "published": "2010-04-29T23:23:01.000+0000",
+    "topics": [],
+    "updated": "2024-12-16T21:49:40.661+0000"
+  },
+  "products": [
+    "AMBA"
+  ],
+  "revision": "1",
+  "title": "AMBA APB Protocol Specification Version C",
+  "topic": {
+    "_links": {
+      "self": [
+        {
+          "href": "https://documentation-service.arm.com/documentation/ihi0024/c?lang=en&rev=1"
+        }
+      ],
+      "self-relative": [
+        {
+          "href": "/documentation/ihi0024/c?lang=en&rev=1"
+        }
+      ]
+    },
+    "anchors": [],
+    "content": "PGh0bWw+CiA8aGVhZD48L2hlYWQ+IAogPGJvZHk+IAogIDxkaXYgY2xhc3M9ImRvY3VtZW50cy10aXRsZXBhZ2UiPiAKICAgPGgyIGNsYXNzPSJkb2N1bWVudHMtdGl0bGUiPkFNQkEgQVBCIFByb3RvY29sIFNwZWNpZmljYXRpb248L2gyPiAKICAgPHA+VGhpcyBkb2N1bWVudCBpcyBvbmx5IGF2YWlsYWJsZSBpbiBhIFBERiB2ZXJzaW9uLiBDbGljayA8c3Ryb25nPkRvd25sb2FkPC9zdHJvbmc+IHRvIHZpZXcuPC9wPiAKICA8L2Rpdj4gIAogPC9ib2R5Pgo8L2h0bWw+",
+    "label": "AMBA APB Protocol Specification",
+    "slug": "",
+    "topics": []
+  },
+  "version": "c",
+  "versionLabel": "C"
+}

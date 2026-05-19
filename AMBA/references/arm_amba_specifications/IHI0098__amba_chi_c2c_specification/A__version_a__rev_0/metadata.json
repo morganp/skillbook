@@ -1,0 +1,92 @@
+{
+  "_links": {
+    "resources": [
+      {
+        "contentType": "application/pdf",
+        "extension": "pdf",
+        "href": "https://documentation-service.arm.com/static/691c2cfd69f16e048ca621a4?token=",
+        "name": "IHI0098A_amba_chi_c2c_architecture_spec.pdf"
+      }
+    ],
+    "revisions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0098/revisions"
+      }
+    ],
+    "self": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0098/a?lang=en&rev=0"
+      }
+    ],
+    "self-relative": [
+      {
+        "href": "/documentation/ihi0098/a?lang=en&rev=0"
+      }
+    ],
+    "versions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0098/versions"
+      }
+    ]
+  },
+  "document": "ihi0098",
+  "isConfidential": false,
+  "keywords": [
+    "CHI",
+    "C2C"
+  ],
+  "language": "en",
+  "languageLabel": "English",
+  "metadata": {
+    "audience": [
+      "Architects",
+      "Silicon Specialists",
+      "SoC Designers"
+    ],
+    "author": "Arm",
+    "categories": [
+      "Architecture products"
+    ],
+    "categoryClassifications": [
+      "ARCDOC"
+    ],
+    "confidentiality": "Non-Confidential",
+    "contentDescription": "This specification describes the AMBA CHI Chip-to-Chip (C2C) architecture.",
+    "contentFormat": "PDFOnly",
+    "contentType": "Architecture Document",
+    "created": "2025-11-18T08:23:25.295+0000",
+    "productQuality": "EAC",
+    "productType": "Advanced Microcontroller Bus Architecture (AMBA)",
+    "published": "2025-11-18T00:00:00.000+0000",
+    "topics": [
+      "Computer architecture"
+    ],
+    "updated": "2025-11-18T08:23:25.295+0000"
+  },
+  "products": [
+    "CHI"
+  ],
+  "revision": "0",
+  "title": "AMBA CHI Chip-to-Chip (C2C) Architecture Specification",
+  "topic": {
+    "_links": {
+      "self": [
+        {
+          "href": "https://documentation-service.arm.com/documentation/ihi0098/a?lang=en&rev=0"
+        }
+      ],
+      "self-relative": [
+        {
+          "href": "/documentation/ihi0098/a?lang=en&rev=0"
+        }
+      ]
+    },
+    "anchors": [],
+    "content": "PGh0bWw+CiA8aGVhZD48L2hlYWQ+IAogPGJvZHk+IAogIDxkaXYgY2xhc3M9ImRvY3VtZW50cy10aXRsZXBhZ2UiPiAKICAgPGgyIGNsYXNzPSJkb2N1bWVudHMtdGl0bGUiPkFNQkEgQ0hJIENoaXAtdG8tQ2hpcCAoQzJDKSBBcmNoaXRlY3R1cmUgU3BlY2lmaWNhdGlvbjwvaDI+IAogICA8cD5UaGlzIGRvY3VtZW50IGlzIG9ubHkgYXZhaWxhYmxlIGluIGEgUERGIHZlcnNpb24uIENsaWNrIDxzdHJvbmc+RG93bmxvYWQ8L3N0cm9uZz4gdG8gdmlldy48L3A+IAogIDwvZGl2PiAgCiA8L2JvZHk+CjwvaHRtbD4=",
+    "label": "AMBA CHI Chip-to-Chip (C2C) Architecture Specification",
+    "slug": "",
+    "topics": []
+  },
+  "version": "a",
+  "versionLabel": "A"
+}

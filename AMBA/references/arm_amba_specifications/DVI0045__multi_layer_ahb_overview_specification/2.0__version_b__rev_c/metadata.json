@@ -1,0 +1,88 @@
+{
+  "_links": {
+    "resources": [
+      {
+        "contentType": "application/pdf",
+        "extension": "pdf",
+        "href": "https://documentation-service.arm.com/static/635fb6bcc5a70d2cdb15fdfd?token=",
+        "name": "DVI0045.pdf"
+      }
+    ],
+    "revisions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/dvi0045/revisions"
+      }
+    ],
+    "self": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/dvi0045/b?lang=en&rev=c"
+      }
+    ],
+    "self-relative": [
+      {
+        "href": "/documentation/dvi0045/b?lang=en&rev=c"
+      }
+    ],
+    "versions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/dvi0045/versions"
+      }
+    ]
+  },
+  "document": "dvi0045",
+  "isConfidential": false,
+  "keywords": [
+    "AMBA"
+  ],
+  "language": "en",
+  "languageLabel": "English",
+  "metadata": {
+    "audience": [
+      "Silicon Specialists",
+      "Hardware Engineers",
+      "SoC Designers"
+    ],
+    "author": "Arm",
+    "categories": [
+      "Architecture products"
+    ],
+    "confidentiality": "Non-Confidential",
+    "contentDescription": "Multi-layer AHB is an interconnection scheme based on the AHB protocol, that enables parallel access paths in a system. This is achieved by using a complex interconnection matrix.",
+    "contentFormat": "PDFOnly",
+    "contentType": "Architecture Document",
+    "created": "2022-10-31T11:51:24.238+0000",
+    "productQuality": "REL",
+    "productType": "Advanced Microcontroller Bus Architecture (AMBA)",
+    "published": "2022-10-31T00:00:00.000+0000",
+    "topics": [
+      "Computer architecture"
+    ],
+    "updated": "2024-12-16T20:43:27.896+0000"
+  },
+  "products": [
+    "AMBA"
+  ],
+  "revision": "c",
+  "title": "Multi-layer AHB Technical Overview",
+  "topic": {
+    "_links": {
+      "self": [
+        {
+          "href": "https://documentation-service.arm.com/documentation/dvi0045/b?lang=en&rev=c"
+        }
+      ],
+      "self-relative": [
+        {
+          "href": "/documentation/dvi0045/b?lang=en&rev=c"
+        }
+      ]
+    },
+    "anchors": [],
+    "content": "PGh0bWw+CiA8aGVhZD48L2hlYWQ+IAogPGJvZHk+IAogIDxkaXYgY2xhc3M9ImRvY3VtZW50cy10aXRsZXBhZ2UiPiAKICAgPGgyIGNsYXNzPSJkb2N1bWVudHMtdGl0bGUiPk11bHRpLWxheWVyIEFIQiBUZWNobmljYWwgT3ZlcnZpZXc8L2gyPiAKICAgPHA+VGhpcyBkb2N1bWVudCBpcyBvbmx5IGF2YWlsYWJsZSBpbiBhIFBERiB2ZXJzaW9uLiBDbGljayA8c3Ryb25nPkRvd25sb2FkPC9zdHJvbmc+IHRvIHZpZXcuPC9wPiAKICA8L2Rpdj4gIAogPC9ib2R5Pgo8L2h0bWw+",
+    "label": "Multi-layer AHB Technical Overview",
+    "slug": "",
+    "topics": []
+  },
+  "version": "b",
+  "versionLabel": "2.0"
+}

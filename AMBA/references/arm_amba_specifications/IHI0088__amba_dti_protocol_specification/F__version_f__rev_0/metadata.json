@@ -1,0 +1,90 @@
+{
+  "_links": {
+    "resources": [
+      {
+        "contentType": "application/pdf",
+        "extension": "pdf",
+        "href": "https://documentation-service.arm.com/static/65ef05752caafd7dd7a386d6?token=",
+        "name": "IHI0088F_amba_dti_protocol_spec.pdf"
+      }
+    ],
+    "revisions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0088/revisions"
+      }
+    ],
+    "self": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0088/f?lang=en&rev=0"
+      }
+    ],
+    "self-relative": [
+      {
+        "href": "/documentation/ihi0088/f?lang=en&rev=0"
+      }
+    ],
+    "versions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0088/versions"
+      }
+    ]
+  },
+  "document": "ihi0088",
+  "isConfidential": false,
+  "keywords": [
+    "AMBA"
+  ],
+  "language": "en",
+  "languageLabel": "English",
+  "metadata": {
+    "audience": [
+      "Architects",
+      "Hardware Engineers",
+      "Silicon Specialists",
+      "SoC Designers"
+    ],
+    "author": "Arm",
+    "categories": [
+      "Architecture products"
+    ],
+    "confidentiality": "Non-Confidential",
+    "contentDescription": "The AMBA DTI (Distributed Translation Interface) specification aligns with the Arm System MMU architecture, to define a scalable, distributed messaging protocol for translation services.",
+    "contentFormat": "PDFOnly",
+    "contentType": "Architecture Document",
+    "created": "2024-03-11T13:21:57.550+0000",
+    "productQuality": "EAC",
+    "productType": "Advanced Microcontroller Bus Architecture (AMBA)",
+    "published": "2023-10-03T00:00:00.000+0000",
+    "topics": [
+      "Computer architecture",
+      "Virtualization"
+    ],
+    "updated": "2024-12-16T22:57:46.502+0000"
+  },
+  "products": [
+    "AMBA"
+  ],
+  "revision": "0",
+  "title": "AMBA DTI Protocol Specification",
+  "topic": {
+    "_links": {
+      "self": [
+        {
+          "href": "https://documentation-service.arm.com/documentation/ihi0088/f?lang=en&rev=0"
+        }
+      ],
+      "self-relative": [
+        {
+          "href": "/documentation/ihi0088/f?lang=en&rev=0"
+        }
+      ]
+    },
+    "anchors": [],
+    "content": "PGh0bWw+CiA8aGVhZD48L2hlYWQ+IAogPGJvZHk+IAogIDxkaXYgY2xhc3M9ImRvY3VtZW50cy10aXRsZXBhZ2UiPiAKICAgPGgyIGNsYXNzPSJkb2N1bWVudHMtdGl0bGUiPkFNQkEgRFRJIFByb3RvY29sIFNwZWNpZmljYXRpb248L2gyPlRoaXMgZG9jdW1lbnQgaXMgb25seSBhdmFpbGFibGUgaW4gYSBQREYgdmVyc2lvbi4gQ2xpY2sgCiAgIDxzdHJvbmc+RG93bmxvYWQ8L3N0cm9uZz4gdG8gdmlldy4gCiAgIDxwPjwvcD4gCiAgIDxwPlRoaXMgaXNzdWUgaW5jbHVkZXMgb25seSBEVEktVEJVdjMsIERUSS1BVFN2MSwgRFRJLUFUU3YyLCBhbmQgRFRJLUFUU3YzIHByb3RvY29scy4gSXQgZG9lcyBub3QgZGVzY3JpYmUgRFRJLVRCVXYxIGFuZCBEVEktVEJVdjIgcHJvdG9jb2xzLiBGb3IgaW5mb3JtYXRpb24gb24gRFRJLVRCVXYxIGFuZCBEVEktVEJVdjIsIHNlZSA8YSBocmVmPSJodHRwczovL2RldmVsb3Blci5hcm0uY29tL2RvY3VtZW50YXRpb24vaWhpMDA4OC9lYyI+QU1CQSBEVEkgUHJvdG9jb2wgU3BlY2lmaWNhdGlvbiBJc3N1ZSBFLmM8L2E+LjwvcD4gCiAgPC9kaXY+ICAKIDwvYm9keT4KPC9odG1sPg==",
+    "label": "AMBA DTI Protocol Specification",
+    "slug": "",
+    "topics": []
+  },
+  "version": "f",
+  "versionLabel": "F"
+}

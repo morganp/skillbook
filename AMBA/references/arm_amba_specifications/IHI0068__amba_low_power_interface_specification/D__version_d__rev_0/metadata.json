@@ -1,0 +1,93 @@
+{
+  "_links": {
+    "resources": [
+      {
+        "contentType": "application/pdf",
+        "extension": "pdf",
+        "href": "https://documentation-service.arm.com/static/617a637283e60c5c768e2241?token=",
+        "name": "IHI0068D_amba_low_power_interface_spec.pdf"
+      }
+    ],
+    "revisions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0068/revisions"
+      }
+    ],
+    "self": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0068/d?lang=en&rev=0"
+      }
+    ],
+    "self-relative": [
+      {
+        "href": "/documentation/ihi0068/d?lang=en&rev=0"
+      }
+    ],
+    "versions": [
+      {
+        "href": "https://documentation-service.arm.com/documentation/ihi0068/versions"
+      }
+    ]
+  },
+  "document": "ihi0068",
+  "isConfidential": false,
+  "keywords": [
+    "AMBA"
+  ],
+  "language": "en",
+  "languageLabel": "English",
+  "metadata": {
+    "audience": [
+      "Architects",
+      "Hardware Engineers",
+      "Verification Engineers",
+      "SoC Designers",
+      "Silicon Specialists"
+    ],
+    "author": "Arm",
+    "categories": [
+      "Architecture products"
+    ],
+    "confidentiality": "Non-Confidential",
+    "contentDescription": "This document describes interfaces that can be used to control the clock and power states of devices",
+    "contentFormat": "PDFOnly",
+    "contentType": "archDoc",
+    "created": "2021-10-28T08:46:41.938+0000",
+    "productQuality": "EAC",
+    "published": "2021-10-28T00:00:00.000+0000",
+    "topics": [
+      "AArch32",
+      "AArch64",
+      "Total Compute",
+      "Validation",
+      "Verification"
+    ],
+    "updated": "2024-12-16T22:24:56.272+0000"
+  },
+  "products": [
+    "AMBA"
+  ],
+  "revision": "0",
+  "title": "AMBA Low Power Interface Specification",
+  "topic": {
+    "_links": {
+      "self": [
+        {
+          "href": "https://documentation-service.arm.com/documentation/ihi0068/d?lang=en&rev=0"
+        }
+      ],
+      "self-relative": [
+        {
+          "href": "/documentation/ihi0068/d?lang=en&rev=0"
+        }
+      ]
+    },
+    "anchors": [],
+    "content": "PGh0bWw+CiA8aGVhZD48L2hlYWQ+IAogPGJvZHk+IAogIDxkaXYgY2xhc3M9ImRvY3VtZW50cy10aXRsZXBhZ2UiPiAKICAgPGgyIGNsYXNzPSJkb2N1bWVudHMtdGl0bGUiPkFNQkEgTG93IFBvd2VyIEludGVyZmFjZSBTcGVjaWZpY2F0aW9uPC9oMj4gCiAgIDxwPlRoaXMgZG9jdW1lbnQgaXMgb25seSBhdmFpbGFibGUgaW4gYSBQREYgdmVyc2lvbi4gQ2xpY2sgPHN0cm9uZz5Eb3dubG9hZDwvc3Ryb25nPiB0byB2aWV3LjwvcD4gCiAgPC9kaXY+ICAKIDwvYm9keT4KPC9odG1sPg==",
+    "label": "AMBA Low Power Interface Specification",
+    "slug": "",
+    "topics": []
+  },
+  "version": "d",
+  "versionLabel": "D"
+}
