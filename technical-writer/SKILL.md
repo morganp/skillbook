@@ -1,6 +1,6 @@
 ---
 name: technical-writer
-description: Multi-pass writing skill for blog posts and technical documentation. Use when the user wants to create or improve a blog post, article, tutorial, how-to guide, or technical document. Covers four passes: Generate Structure, Draft, Refine, and Review. The Review pass works top-down through Chapters, Sections, Paragraphs, Sentences, Words, and Punctuation. Apply the house style guide and word replacement list. Also use when the user asks to review prose for active voice, tense, acronym definitions, list consistency, or preferred terminology.
+description: Create, improve, and review blog posts, tutorials, how-to guides, and technical documentation. Use for prose structure, drafting, refinement, style-guide checks, active voice, tense, acronyms, list consistency, terminology, and punctuation review.
 ---
 
 # Technical writer
