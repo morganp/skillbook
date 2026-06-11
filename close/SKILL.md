@@ -29,7 +29,7 @@ OK before touching any file, so nothing is invented or silently changed.
   are namespaced `mcp__claude_ai_SecondBrain__*` (e.g. `mcp__claude_ai_SecondBrain__write_text`,
   `...__append`, `...__list_projects`). Required tools, under whatever namespace the connector
   exposes: `list_projects`, `list_actions`, `list_areas`, `grep`, `read_text`, `write_text`,
-  `append`, `edit`, `glossary_add`, `archive_project` / `archive_action` / `archive_area`.
+  `append`, `edit`, `add_term`, `archive_project` / `archive_action` / `archive_area`.
 - Write ONLY through that connected SecondBrain MCP. Never write the vault via local files or
   any other path. If no SecondBrain (brain-mcp) connector is loaded, say so and stop; do not
   write knowledge anywhere else.
@@ -62,7 +62,7 @@ Present a routing plan as a table and **wait for approval**:
 |---|---|---|
 | "decided X over Y because…" | `projects/<id>.md` | append `## Log` + set `next_action` |
 | "should build a Z later" | `actions/build-z.md` (new) | `write_text`, `stage: someday` |
-| "term: telemetry = …" | `glossary.md` | `glossary_add` |
+| "term: telemetry = …" | `glossary.md` | `add_term` |
 
 Quote the user's own words; do not paraphrase facts into something they didn't say.
 
@@ -73,7 +73,7 @@ On approval, route each item:
 - **New task / idea** → `write_text` `actions/<id>.md` (`stage: someday|next|waiting`,
   `tags`, optional `due`).
 - **Durable lookup knowledge** → `append` to (or `write_text`) `reference/<id>.md`.
-- **New term** → `glossary_add`.
+- **New term** → `add_term`.
 - **Public-worthy** → set `visibility: public`, `blog_status: draft` on the note. Keep it
   in its PARA bucket; do **not** push to the blog from here (publishing is a separate,
   explicit step via blog-mcp).
@@ -103,7 +103,7 @@ write; note the result. If a write returns a push error but saved locally, surfa
 > |---|---|---|
 > | "switched the parser to streaming to fix the 2GB OOM" | `projects/log-ingest.md` | `## Log` + `next_action: add backpressure test` |
 > | "try clickhouse for the rollups later" | `actions/eval-clickhouse.md` (new) | `stage: someday`, tags `[code, data]` |
-> | "term: backpressure = flow-control that slows a producer to match a slow consumer" | `glossary.md` | `glossary_add` |
+> | "term: backpressure = flow-control that slows a producer to match a slow consumer" | `glossary.md` | `add_term` |
 >
 > Apply these? (y / edit)
 
