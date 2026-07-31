@@ -1,4 +1,4 @@
 interface:
   display_name: "Daily Summary"
-  short_description: "Refresh your current priorities and todos"
-  default_prompt: "Use $daily-summary to show my current priorities and outstanding todos."
+  short_description: "Refresh goals, events, priorities, and todos"
+  default_prompt: "Use $daily-summary to show my goals, upcoming events, priorities, and outstanding todos."
