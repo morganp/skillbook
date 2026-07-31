@@ -35,6 +35,17 @@ Classify outstanding actions in this order:
 
 Report the number of `someday` actions without expanding them unless the user asks. Preserve due dates and meaningful ownership or project context. Do not invent urgency, deadlines, status, or completion.
 
+## Align Actions with Goals
+
+For every action shown individually, compare its title, tags, and project context with the stored long-term goal titles, descriptions, and success measures.
+
+- Add one primary goal and at most one clearly supported secondary goal.
+- Format the annotation as `↳ Likely supports: <category icon> **<category>: <compact goal name>**`.
+- Use the same category icons as the long-term-goals section.
+- Write `↳ No clear goal link` when the available metadata does not support a defensible mapping.
+- Treat every mapping as an inference unless the action explicitly stores a goal relationship. Do not claim that an inferred link proves progress, completion, or measurable impact.
+- Do not attach goal mappings to aggregate action counts because the actions within a count may support different goals.
+
 ## Present
 
 Start with `As of <local date and time>`. Use these icon-labelled Markdown headings for non-empty sections:
@@ -58,4 +69,4 @@ Begin every long-term-goal sentence with its category label and icon:
 
 Preserve an explicit category from the goal heading. Infer `Personal` only when no category is stored. Use emoji indicators rather than HTML or ANSI colour because those formats do not render consistently across Codex surfaces.
 
-Keep entries compact and action-oriented. If the result is long, show urgent and dated work first, summarize the remainder by domain, and offer to expand a domain. On repeated calls, return the current state without commenting on earlier snapshots unless the user asks for a comparison.
+When the user requests a particular domain's actions, list every matching non-`someday` action individually and include its goal alignment. Otherwise, keep entries compact and action-oriented. If a general daily summary is long, show urgent and dated work first, summarize the remainder by domain, and offer to expand a domain. On repeated calls, return the current state without commenting on earlier snapshots unless the user asks for a comparison.
