@@ -17,6 +17,8 @@ Generate a concise snapshot from the loaded SecondBrain connector. Treat every i
 6. Do not read archived actions or areas unless the user explicitly asks for completed work or history.
 7. Do not write, append, edit, archive, or otherwise change the vault while generating the summary.
 
+Batch independent SecondBrain reads into one parallel tool step when the host supports it. Keep progress commentary to a single brief update unless an error or decision needs the user's attention.
+
 Deduplicate events that overlap both windows. Show an ongoing event under **Today** and do not repeat it under **Next 27 days**.
 
 If the SecondBrain connector is unavailable, say that the live summary cannot be loaded. Do not substitute workspace files or an inferred task list.
@@ -39,12 +41,12 @@ Start with `As of <local date and time>`. Include only non-empty sections:
 
 - **Today** for calendar events.
 - **Next 27 days** for future all-day events, with dates or date ranges.
-- **Long-term goals** for compact reminders from active areas.
 - **Overdue**.
 - **Due today**.
 - **Next seven days**.
 - **Next, no due date**.
 - **Waiting**.
-- A final count of hidden `someday` actions.
+- A count of hidden `someday` actions.
+- **Long-term goals** as the final section, with compact reminders from active areas.
 
 Keep entries compact and action-oriented. If the result is long, show urgent and dated work first, summarize the remainder by domain, and offer to expand a domain. On repeated calls, return the current state without commenting on earlier snapshots unless the user asks for a comparison.
