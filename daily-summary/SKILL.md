@@ -37,16 +37,25 @@ Report the number of `someday` actions without expanding them unless the user as
 
 ## Present
 
-Start with `As of <local date and time>`. Include only non-empty sections:
+Start with `As of <local date and time>`. Use these icon-labelled Markdown headings for non-empty sections:
 
-- **Today** for calendar events.
-- **Next 27 days** for future all-day events, with dates or date ranges.
-- **Overdue**.
-- **Due today**.
-- **Next seven days**.
-- **Next, no due date**.
-- **Waiting**.
-- A count of hidden `someday` actions.
-- **Long-term goals** as the final section, with compact reminders from active areas.
+- `### 📅 Today` for calendar events.
+- `### 🗓️ Next 27 days` for future all-day events, with dates or date ranges.
+- `### 🔴 Overdue` for overdue actions.
+- `### 🟠 Due today` for actions due today; use orange as the portable Markdown approximation of amber.
+- `### 📆 Next seven days`.
+- `### 📋 Next, no due date`.
+- `### ⏳ Waiting`.
+- `💭 <count> someday actions hidden.` as a compact standalone line.
+- `### 🎯 Long-term goals` as the final section, with compact reminders from active areas.
+
+Begin every long-term-goal sentence with its category label and icon:
+
+- `💼 **Work:**` for work delivery and engineering goals.
+- `🤝 **DEI:**` for diversity, equity, inclusion, and collaborative-participation goals.
+- `🌱 **Development:**` for professional development goals.
+- `🏠 **Personal:**` for personal goals, including unlabelled goals such as hobbies.
+
+Preserve an explicit category from the goal heading. Infer `Personal` only when no category is stored. Use emoji indicators rather than HTML or ANSI colour because those formats do not render consistently across Codex surfaces.
 
 Keep entries compact and action-oriented. If the result is long, show urgent and dated work first, summarize the remainder by domain, and offer to expand a domain. On repeated calls, return the current state without commenting on earlier snapshots unless the user asks for a comparison.
