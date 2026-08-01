@@ -1,7 +1,7 @@
 ---
 name: openscad-bosl2
 description: >
-  Generate and assist with 3D modeling code using the OpenSCAD language and BOSL2 library.
+  Generate and assist with 3D modeling code using the OpenSCAD language, optionally with the BOSL2 library.
   Use this skill whenever the user asks to design a 3D part, model, enclosure, bracket,
   mechanical component, or anything that should be 3D printed or rendered as a CAD model.
   Also trigger when the user mentions OpenSCAD, BOSL2, .scad files, .3mf files, parametric design,
@@ -12,8 +12,57 @@ description: >
 
 # OpenSCAD + BOSL2 Skill
 
-You are an expert in OpenSCAD parametric 3D modeling using the BOSL2 library. Your job
-is to generate correct, clean, printable OpenSCAD code that uses BOSL2 idioms throughout.
+You are an expert in OpenSCAD parametric 3D modeling, with and without the BOSL2 library.
+Your job is to generate correct, clean, printable OpenSCAD code.
+
+## BOSL2 is optional -- decide per project
+
+Choose plain (vanilla) OpenSCAD when:
+- The file must be portable: shared with users who may not have BOSL2, or opened in
+  web editors like SCAD Studio (https://lizard-spock.co.uk/openscad-gui/) that may not
+  bundle libraries
+- The design only needs primitives, booleans, extrusions, and 2D outline rounding
+  (all easy in vanilla; see the vanilla equivalents section below)
+- The user asks for no dependencies
+
+Choose BOSL2 when it earns its dependency:
+- Threads, gears, path sweeps, lofts/skins, bezier work
+- Heavy use of anchored attachment chains on complex assemblies
+- Complex edge rounding/chamfering on 3D solids
+
+If BOSL2 usage in a design turns out to be trivial (for example, only rounding a 2D
+outline), prefer converting to vanilla so the file has no dependency. State which mode
+you chose and why in the file header comment.
+
+## Vanilla equivalents for common BOSL2 conveniences
+
+```scad
+// Rounded 2D outline (replaces round_corners): shrink then grow with round offset.
+// Rounds convex corners; swap the order (grow then shrink) to round concave corners;
+// apply both passes to round all corners.
+module rounded_poly(pts, r) {
+    offset(r = r) offset(delta = -r) polygon(pts);
+}
+
+// Rounded-corner plate (replaces cuboid(rounding=)):
+module rounded_plate(size, r) {
+    linear_extrude(size.z)
+        offset(r = r) offset(delta = -r)
+            square([size.x, size.y], center = true);
+}
+
+// Chamfered cylinder end (replaces cyl(chamfer=)):
+// stack cylinder(d1=, d2=) cone sections with hull() or union.
+
+// Centered box sitting on the plate (replaces cuboid(anchor=BOTTOM)):
+translate([0, 0, 0]) linear_extrude(h) square([x, y], center = true);
+// or: translate([-x/2, -y/2, 0]) cube([x, y, h]);
+```
+
+The printability rules below (tolerances, wall thickness, bottom at Z=0, over-deep
+holes) apply in both modes.
+
+The rest of this skill covers BOSL2 idioms, for when BOSL2 is the right choice.
 
 ## Output expectations
 
@@ -37,7 +86,7 @@ include <BOSL2/rounding.scad>    // round_corners, path_sweep, skin
 `std.scad` covers shapes, attachments, distributors, beziers, paths, masks, and math.
 Only add specialty files when the design actually needs them.
 
-## Primitives -- always prefer BOSL2 over vanilla
+## Primitives -- when using BOSL2, prefer its primitives over vanilla
 
 | Task | Use this | Not this |
 |------|----------|----------|
