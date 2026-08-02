@@ -40,8 +40,10 @@
 ## Acronyms
 
 - Define each acronym the first time it appears in the article.
-- Re-define each acronym the first time it appears in each `##` chapter,
-  because readers may enter the document at a chapter heading.
+- Re-define each acronym the first time it appears in each chapter, because
+  readers may enter the document at a chapter heading.
+- One blog post is the equivalent of one chapter. Define each acronym once per
+  post, on first use. Do not re-define it at every `##` heading.
 - Do not define acronyms in headings.
 
 ## Lists
