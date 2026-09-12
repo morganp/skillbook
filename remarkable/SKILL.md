@@ -42,6 +42,10 @@ script's.
 | Create a folder | **No** |
 | Move or rename anything | **No** |
 
+Everything marked No here is available through `rmapi` against a self-hosted
+rmfakecloud, which needs developer mode. If the device has that, reach for
+`rmapi` first and treat this interface as the fallback.
+
 Two consequences shape every task:
 
 **Uploads are permanent from here.** Nothing in this interface removes a
@@ -126,6 +130,73 @@ ones", resolve it before uploading rather than guessing:
 
 A large source directory is the normal case. `~/Downloads` holding a hundred
 books is not a reason to send a hundred books.
+
+## Backing up the device
+
+`scripts/rm_backup.py` pulls every document off the tablet into a mirrored
+folder tree on disk. Plan first, as always:
+
+```bash
+python3 scripts/rm_backup.py              # what would be downloaded, and where
+python3 scripts/rm_backup.py --run        # download it
+```
+
+Default destination is `~/Documents/remarkable-backup/<today>`; `--out` picks
+another. Re-running resumes, skipping files already on disk, so an interrupted
+backup is restarted by running the same command again. `--force` re-downloads
+everything.
+
+Each run writes a `manifest.json` beside the files listing every document's
+device ID, folder, saved path, size, and SHA-256.
+
+**This is a readable archive, not a restorable one.** The interface serves the
+device's own export of each document: a notebook comes back as a PDF of its
+pages, and an annotated PDF comes back with the annotations flattened into it.
+The raw `.rm` stroke data is never served over USB, so nothing here puts
+layers, or the documents themselves, back onto a device. Say this plainly
+before anyone wipes a tablet on the strength of a backup from this script.
+
+If the device has developer mode and a self-hosted cloud (rmfakecloud), prefer
+`rmapi` over this script. `rmapi get` returns a `.rmdoc` carrying the raw `.rm`
+stroke files and the untouched source document, which is a genuinely restorable
+backup, and it can also create folders, move and delete. These USB scripts stay
+the only option before developer mode is enabled.
+
+### Pacing, and the document that kills the server
+
+The device renders every export on demand, and it is easily overwhelmed. All
+three of these were observed on a reMarkable Paper Pro:
+
+- Its own renderer gives up around 15 seconds and returns **HTTP 408**. A longer
+  client timeout does not help: the timeout is the device's, not the client's.
+- Pushed past that it answers **HTTP 400 to everything**, including documents
+  that downloaded fine moments earlier.
+- Pushed further the web server **dies outright** (connection refused) and has
+  to be restarted from the tablet: Settings > Storage > USB web interface off
+  then on, or a reboot.
+
+So `rm_backup.py` paces itself: two seconds between documents, 30s and 90s rests
+between retries, and it stops after three consecutive failures rather than
+hammering a device that has already given up. Do not remove that pacing to make
+a backup finish faster; it is what makes it finish at all.
+
+A single malformed document can take the whole session down. One PDF reliably
+killed the web server on every attempt, which then failed every document after
+it and looked like a general fault. Exclude it and continue:
+
+```bash
+python3 scripts/rm_backup.py --run --skip deadsimplepython
+```
+
+`--skip` matches a device ID or a substring of the name, and repeats. When a run
+ends with many consecutive failures, suspect one poisonous document rather than
+a broken device: check whether the failures start at a particular file, skip it,
+and re-run. Failed entries are recorded in `manifest.json` with an `error`
+field, so the outstanding set explains itself.
+
+Connection refused is treated differently from a document-level failure. It
+means the server is gone rather than the document being bad, so the script stops
+immediately and tells you to restart the interface.
 
 ## Reading the device
 

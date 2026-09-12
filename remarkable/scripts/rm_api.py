@@ -28,6 +28,7 @@ from __future__ import annotations
 import json
 import mimetypes
 import urllib.error
+import urllib.parse
 import urllib.request
 import uuid
 from dataclasses import dataclass
@@ -120,6 +121,30 @@ class Remarkable:
                 found.append((prefix, item))
         return found
 
+    def download(self, item_id: str, timeout: int | None = None) -> tuple[str, bytes]:
+        """Fetch one document's export, as (filename, bytes).
+
+        The device renders the export itself: a notebook comes back as a PDF of
+        the pages, and an annotated PDF comes back with the annotations burned
+        in. The raw .rm stroke data is not served here, so this is a readable
+        copy, not a restorable one.
+
+        The filename comes from Content-Disposition when the device sends it,
+        which it does inconsistently across firmware versions; callers should
+        be ready to fall back to the document's VisibleName.
+        """
+        path = f"/download/{item_id}/placeholder"
+        try:
+            with self._opener.open(
+                f"{self.host}{path}", timeout=timeout or self.timeout
+            ) as r:
+                disposition = r.headers.get("Content-Disposition", "")
+                return _filename_from(disposition), r.read()
+        except OSError as exc:
+            # URLError and TimeoutError are both OSError. Catching only the
+            # former lets a slow render crash the caller mid-backup.
+            raise RemarkableError(f"download {item_id} failed: {exc}") from exc
+
     # -- writing -----------------------------------------------------------
 
     def upload_to(self, path: Path, folder_id: str = "") -> None:
@@ -197,3 +222,19 @@ def normalise(name: str) -> str:
     """
     stem = Path(name).stem.lower()
     return "".join(c for c in stem if c.isalnum())
+
+
+def _filename_from(disposition: str) -> str:
+    """Pull the filename out of a Content-Disposition header, or return "".
+
+    Handles both filename="x.pdf" and the RFC 5987 filename*=UTF-8''x.pdf form.
+    """
+    for part in disposition.split(";"):
+        part = part.strip()
+        for key in ("filename*=", "filename="):
+            if part.lower().startswith(key):
+                value = part[len(key):].strip().strip('"')
+                if key == "filename*=" and "''" in value:
+                    value = urllib.parse.unquote(value.split("''", 1)[1])
+                return Path(value).name
+    return ""
