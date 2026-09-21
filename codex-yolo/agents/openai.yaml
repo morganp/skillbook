@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex YOLO"
+  short_description: "Restore Codex full-access preferences"
+  default_prompt: "Use $codex-yolo to restore my Codex full-access settings after an update."
