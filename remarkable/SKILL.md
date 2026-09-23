@@ -2,12 +2,14 @@
 name: remarkable
 description: >
   Push books and documents onto a reMarkable tablet over its USB web interface,
-  into a chosen folder on the device, skipping anything already there. Use this
-  skill whenever the user wants to copy, send, push, sync, or load PDFs or EPUBs
-  onto a reMarkable, organise what is on the device, or check what the device
-  already holds. Also trigger on mentions of 10.11.99.1, the reMarkable USB web
-  interface, or moving books from a downloads folder or a library share onto the
-  tablet.
+  into a chosen folder on the device, skipping anything already there, and
+  manage the tablet's files through rmapi against the self-hosted rmfakecloud.
+  Use this skill whenever the user wants to copy, send, push, sync, or load PDFs
+  or EPUBs onto a reMarkable, organise, move, rename, delete, or create folders
+  for reMarkable files, back up documents, or check what the device already
+  holds. Also trigger on mentions of rmapi, rmfakecloud, rmcloud, pairing rmapi,
+  the daily brief upload, 10.11.99.1, the reMarkable USB web interface, or moving
+  books from a downloads folder or a library share onto the tablet.
 ---
 
 # reMarkable
@@ -42,9 +44,10 @@ script's.
 | Create a folder | **No** |
 | Move or rename anything | **No** |
 
-Everything marked No here is available through `rmapi` against a self-hosted
-rmfakecloud, which needs developer mode. If the device has that, reach for
-`rmapi` first and treat this interface as the fallback.
+Everything marked No here is available through `rmapi` against the self-hosted
+rmfakecloud; see [rmapi and the self-hosted rmfakecloud](#rmapi-and-the-self-hosted-rmfakecloud).
+The tablet is already paired with it, so reach for `rmapi` first for deleting,
+creating folders, moving and renaming, and treat this interface as the fallback.
 
 Two consequences shape every task:
 
@@ -159,8 +162,10 @@ before anyone wipes a tablet on the strength of a backup from this script.
 If the device has developer mode and a self-hosted cloud (rmfakecloud), prefer
 `rmapi` over this script. `rmapi get` returns a `.rmdoc` carrying the raw `.rm`
 stroke files and the untouched source document, which is a genuinely restorable
-backup, and it can also create folders, move and delete. These USB scripts stay
-the only option before developer mode is enabled.
+backup, and it can also create folders, move and delete. See
+[rmapi and the self-hosted rmfakecloud](#rmapi-and-the-self-hosted-rmfakecloud)
+for the invocation. These USB scripts stay the only option before developer mode
+is enabled.
 
 ### Pacing, and the document that kills the server
 
@@ -224,3 +229,110 @@ connection and puts the upload there, so `upload_to()` issues a
 Keep those two calls together, on the same `Remarkable` instance. Reordering
 them, or splitting them across instances, silently sends the file to the root
 instead of failing.
+
+## rmapi and the self-hosted rmfakecloud
+
+The tablet syncs to a self-hosted rmfakecloud rather than reMarkable's cloud.
+`rmapi` talks to that server, and it does everything the USB interface cannot:
+create folders, delete, move and rename, and pull restorable backups. It works
+over the network, so no cable is needed.
+
+### The server
+
+rmfakecloud v0.0.31 runs in LXC 123 ("rmcloud") under Docker Compose at
+`/opt/rmfakecloud`, listening on port 3000. `STORAGE_URL` is deliberately unset
+so that both of the URLs below work. Leave it unset.
+
+| Reach it from | URL |
+|---|---|
+| LAN: the web UI, and rmapi on LXC 117 | `http://192.168.100.123:3000` |
+| Tailnet: the tablet and the Mac | `https://rmcloud.tail48dece.ts.net` |
+
+The tailnet URL is published with `tailscale serve` and has a valid Let's
+Encrypt certificate. Always use the hostname, never the tailnet IP, or the
+certificate will not match.
+
+### Install
+
+Use the ddvk/rmapi fork (latest v0.0.35).
+
+- **LXC 117:** `/usr/local/bin/rmapi`, with its config at
+  `/root/dotfiles/config/rmapi/rmapi.conf`. rmapi finds it through
+  `XDG_CONFIG_HOME=/root/dotfiles/config`.
+- **Mac:** installed and paired against the tailnet URL.
+
+### Pairing
+
+1. Set `RMAPI_HOST` to the server URL for this machine.
+2. Run `rmapi`. It asks for a one-time code.
+3. Open the rmfakecloud web UI, go to the **Connect** page, and generate a code.
+   It is valid for 5 minutes.
+4. Enter it. The token is written to the config file.
+
+### The trap: the config does not know its server
+
+**The config file does not record which host it was paired against.** Run
+`rmapi` without `RMAPI_HOST` and it talks to the real reMarkable cloud and
+overwrites the stored token. This has happened, and the fix was a
+fresh pairing.
+
+So:
+
+- **Always set `RMAPI_HOST`**, on every invocation, including one-off checks.
+- Prefer `RMAPI_CONFIG=<path>` with one config file per server, so a mistake
+  can only damage the config for the server it was aimed at.
+
+The canonical invocation from the PVE host:
+
+```bash
+pct exec 117 -- env HOME=/root XDG_CONFIG_HOME=/root/dotfiles/config \
+  RMAPI_HOST=http://192.168.100.123:3000 /usr/local/bin/rmapi <cmd>
+```
+
+### Commands
+
+Verified working against this server:
+
+| Command | Does |
+|---|---|
+| `ls [folder]` | List a folder |
+| `mkdir <path>` | Create a folder |
+| `put <file> [folder]` | Upload a PDF or EPUB into a folder |
+| `get <path>` | Download as a `.rmdoc`, a restorable backup with the raw `.rm` strokes |
+| `rm <path>` | Delete a document, or a directory (there is no `rmdir`) |
+| `mv <src> <dest>` | Move into a folder, or rename by giving a new name |
+
+Useful environment variables:
+
+- `RMAPI_TRACE=1` logs every request, the first thing to reach for when a
+  command fails silently.
+- `RMAPI_CONCURRENT` sets how many transfers run in parallel.
+- `RMAPI_FORCE_SCHEMA_VERSION` pins the sync schema version rather than letting
+  rmapi detect it.
+
+### Before any server-side move or delete
+
+rmapi edits the server copy. If the tablet holds annotations it has not synced
+yet, a server-side move or delete conflicts with them, and the annotations can
+be lost.
+
+- **Let the tablet sync first.** Wake it, confirm it is online, and wait for it
+  to settle before running `mv` or `rm`.
+- **Never delete or replace a document as cleanup** without first checking the
+  tablet for unsynced annotations on it. A duplicate that looks redundant may be
+  the copy the user has been writing on.
+
+### The web UI cannot move or rename
+
+The rmfakecloud web UI (v0.0.31) has no move or rename. The backend does
+implement it, as `PUT /ui/api/documents` taking `{documentId, parentId, name}`,
+but the UI never calls it, and sending an empty `name` blanks the document's
+title. Do not call that endpoint by hand. Use `rmapi mv`, or do it on the
+tablet.
+
+### The daily brief
+
+`/opt/rmbriefing/generate_daily_brief.sh` on LXC 117 runs from cron at 05:00.
+It pushes the day's PDF with `rmapi put "$PDF" Daily`, and falls back to
+`rmapi put --content-only` when that fails. When the brief does not appear on
+the tablet, check this script's rmapi call and its `RMAPI_HOST` first.
