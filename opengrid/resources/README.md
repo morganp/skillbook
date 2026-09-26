@@ -3,10 +3,21 @@
 Reference OpenSCAD Customizer scripts. Copy them into the project folder
 before editing; never edit these originals.
 
+## Credits
+
+- **openGrid** system: David D, CC BY 4.0,
+  <https://www.printables.com/model/1214361-opengrid-walldesk-mounting-framework-and-ecosystem>
+- **openGrid.scad** (openGrid Tile Generator): BlackjackDuck (Andy),
+  <https://makerworld.com/en/@BlackjackDuck>, CC BY-NC-SA 4.0
+- **opengrid-bin.scad** (Customizable openGrid Bins): Mikey Ward (@wookiee),
+  <https://makerworld.com/en/models/1813759-customizable-opengrid-bins>, CC BY-SA 4.0
+
+Derivatives of these files must keep the same licence and credit.
+
 | File | Makes | Deps | Licence / origin |
 |---|---|---|---|
 | `openGrid.scad` | openGrid boards (Full 6.8 mm, Lite 4.0 mm), stacks, fill-a-space tile sets | BOSL2 | CC BY-NC-SA 4.0. openGrid design by DavidD, OpenSCAD by BlackjackDuck (Andy). Keep the header intact. |
-| `opengrid-bin.scad` | Wall bin with chamfered walls, optional dividers, snaps on the back wall | none | Origin not recorded (openGrid community bin generator). Treat as third party: do not relicense. |
+| `opengrid-bin.scad` | Wall bin with chamfered walls, optional dividers, snaps on the back wall | none | CC BY-SA 4.0. "Customizable openGrid Bins" by Mikey Ward (@wookiee), <https://makerworld.com/en/models/1813759-customizable-opengrid-bins>. Attribution header added; code unchanged. |
 
 ## openGrid.scad key parameters
 

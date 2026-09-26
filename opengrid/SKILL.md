@@ -43,8 +43,12 @@ openGrid grid, plus a clear statement of how it fits next to its neighbours.
 2. **Resource scripts** in `resources/` (see `resources/README.md`):
    - `openGrid.scad`: board / tile generator (needs BOSL2). The only source
      for printable boards.
-   - `opengrid-bin.scad`: original bin generator. Use when the user asks for
-     it or wants its Directional snap. Mind the odd-width rule below.
+   - `opengrid-bin.scad`: Mikey Ward's Customizable openGrid Bins
+     (CC BY-SA 4.0). Use when the user asks for it or wants its Directional
+     snap. Mind the odd-width rule below.
+
+   Derived files keep the source licence and credit line (see
+   `resources/README.md`). Library code must stay clean-room MIT.
 
 Never edit the resource files in place. Copy into the project folder, rename
 for the part (`opengrid-bin-3c-40d-56h.scad`), then change the Customizer

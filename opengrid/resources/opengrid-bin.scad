@@ -1,3 +1,13 @@
+/*
+Customizable openGrid Bins
+Design and OpenSCAD by Mikey Ward (@wookiee)
+https://makerworld.com/en/models/1813759-customizable-opengrid-bins
+Licensed Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)
+https://creativecommons.org/licenses/by-sa/4.0/
+openGrid system by David D.
+Attribution header added; code otherwise unchanged.
+*/
+
 $fn = 128;
 
 /* [Bin Parameters] */
